@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria Retro</title>
+    <style> 
+    .img {width: 13em; border: 5px solid blue; border-radius: 7px;} 
+    .footer {text-align: center; border-top: 2px solid #128de4;} 
+    .header {text-align: center; border-bottom: 2px solid #128de4;}
+    .contenedor-imagenes {display: flex; flex-wrap: wrap; justify-content: center;
+        gap: 20px; margin-top: 100px;}
+
+    </style>
 </head>
 
-<body>
-    <header>
+<body style="display: flex; flex-direction:column; min-height:100vh;">
+    <header class="header">
         <h1>Bienvenido a la Galeria Retro</h1>
+        <h5>Realizada por: Facundo Zega</h5>
     </header>
-    <main>
-
+    <main class="main" style="flex: 1; margin-top: 35px;">
+        <p>Esta galeria consiste en una colección de peliculas propias en formato fisico DVD, pertenecientes a decadas pasadas.</p>
+        <p>Cada pelicula estara acompañada de una breve descripcion junto a una ficha tecnica con información detallada.</p>
+        <p>¡Disfruta de esta experiencia retro!</p>
+        <div class="contenedor-imagenes">
+            <img src="imgs/harry.jpg" alt="Harry Potter y la Piedra Filosofal" class="img">
+            <img src="imgs/indiana.jpg" alt="Indiana Jones y el Templo Maldito" class="img">
+            <img src="imgs/terminator.jpg" alt="Terminator 2 - El Juicio Final" class="img">
+            <img src="imgs/spiderman.jpg" alt="Spiderman 2" class="img">
+            <img src="imgs/lotr.jpg" alt="Lord of the Rings - El Retorno del Rey" class="img">
+            <p>¡Haz clic en las imagenes para ver más detalles!</p>
+        </div>    
     </main>
-    <footer>
+    <footer class="footer">
         <p>&copy; 2026 Galeria Retro. Todos los derechos reservados.</p>
+        <a href="https://github.com/facuZ45/tarea-desarrollo-web/blob/main/README.md">Click para documentacion del sitio </a>
     </footer>
 </body>
 
