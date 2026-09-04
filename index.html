@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria Retro</title>
     <style> 
-    .img {width: 13em; border: 5px solid blue; border-radius: 7px;} 
-    .footer {text-align: center; border: 2px solid #f9ea4b; background-color:#002789;} 
-    .header {text-align: center; border: 2px solid #f9ea4b; background-color: #415eff;}
+    .img {flex: 0 0 18rem; width: 18rem; box-shadow: #0E3FA9 0.5rem 0.5rem 1.5rem; border-radius: 7px;} 
+    .footer {text-align: center; border: 2px solid #FFA903; background-color:#242529;} 
+    .header {text-align: center; border: 2px solid #FFA903; background-color: #0E3FA9; color:#FFA903; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 1.5rem; padding: 0.5rem}
     .contenedor-imagenes {display: flex; flex-wrap: wrap; justify-content: center;
-        gap: 20px; margin-top: 100px;}
+        max-width:60rem; gap: 3rem; margin: 100px auto;}
     
     </style>
 </head>
 
-<body style="display: flex; flex-direction:column; min-height:100vh; margin: 0; padding: 0;">
+<body style="display: flex; flex-direction:column; min-height:110vh; margin: 0; padding: 0;">
     <header class="header">
-        <h1>Bienvenido a la Galeria Retro</h1>
-        <h5 class="nombre-header-xd" style="font-family:'Comic Sans MS', 'Comic Sans', cursive;">Realizada por: Facundo Zega</h5>
+        <h1>RetroGallery</h1>
+        <h5 class="nombre-header-xd" style="font-family:'Comic Sans MS', 'Comic Sans', cursive; font-size: 0.5em; margin: 0.3rem;">Realizada por: Facundo Zega</h5>
     </header>
-    <main class="main" style="flex: 1; background-color:#f9ea4b;">
+    <main class="main" style="flex: 1; background-color:#121214; color: #F5F5F7; text-align: center;">
+        <div class="portada">
+            <img src="imgs/ARTvideoclub.jpg" alt="Portada de la Galeria retro" style="width: 50%; margin: 5rem; border-radius: 7px;">
+        </div>
         <p>Esta galeria consiste en una colección de peliculas propias en formato fisico DVD, pertenecientes a decadas pasadas.</p>
         <p>Cada pelicula estara acompañada de una breve descripcion junto a una ficha tecnica con información detallada.</p>
         <p>¡Disfruta de esta experiencia retro!</p>
@@ -29,8 +32,8 @@
             <img src="imgs/terminator.jpg" alt="Terminator 2 - El Juicio Final" class="img">
             <img src="imgs/spiderman.jpg" alt="Spiderman 2" class="img">
             <img src="imgs/lotr.jpg" alt="Lord of the Rings - El Retorno del Rey" class="img">
-            <p>¡Haz clic en las imagenes para ver más detalles!</p>
-        </div>    
+        </div>
+        <p>¡Haz clic en las imagenes para ver más detalles!</p>
     </main>
     <footer class="footer">
         <div class="footer-content" style="margin-bottom: 25px">
